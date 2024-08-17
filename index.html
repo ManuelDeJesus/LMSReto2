@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .featured-cars {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .car {
+            background: #fff;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            .featured-cars {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agencia de Carros</h1>
+        <nav>
+            <a href="#home">Inicio</a> | 
+            <a href="#featured">Vehículos Destacados</a> | 
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+    
+    <section class="slider">
+        <div class="slider-container">
+            <img src="car1.jpg" alt="Carro 1">
+            <img src="car2.jpg" alt="Carro 2">
+            <img src="car3.jpg" alt="Carro 3">
+        </div>
+    </section>
+    
+    <section id="featured" class="section">
+        <h2>Vehículos Destacados</h2>
+        <div class="featured-cars">
+            <div class="car">
+                <h3>Modelo A</h3>
+                <img src="car-model-a.jpg" alt="Modelo A">
+                <p>Descripción breve del Modelo A.</p>
+            </div>
+            <div class="car">
+                <h3>Modelo B</h3>
+                <img src="car-model-b.jpg" alt="Modelo B">
+                <p>Descripción breve del Modelo B.</p>
+            </div>
+            <div class="car">
+                <h3>Modelo C</h3>
+                <img src="car-model-c.jpg" alt="Modelo C">
+                <p>Descripción breve del Modelo C.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contacto</h2>
+        <p>Para más información, por favor contáctanos en:</p>
+        <p>Email: contacto@agenciacarros.com</p>
+        <p>Teléfono: +123 456 7890</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Agencia de Carros. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
